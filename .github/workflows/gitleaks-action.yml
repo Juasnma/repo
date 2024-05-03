@@ -14,4 +14,4 @@ jobs:
       
     - name: Run Gitleaks
       run: |
-        C:\Users\Usuario\Documents\gitleaks.exe detect --no-git -v
+        "C:\Users\Usuario\Documents\gitleaks.exe detect --no-git -v"
