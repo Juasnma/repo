@@ -1,0 +1,17 @@
+name: Gitleaks Security Check
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  gitleaks:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Run Gitleaks
+      run: |
+        C:\Users\Usuario\Documents\gitleaks.exe detect --no-git -v
